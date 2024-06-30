@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eTicket Generation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url("museum-background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .form-container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .form-group input[type="date"] {
+        padding: 9px;
+      }
+      .form-group input::placeholder {
+        color: #aaa;
+      }
+      .form-group input:required {
+        border-color: #f00;
+      }
+      .submit-btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #4caf50;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .submit-btn:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>eTicket Generation</h2>
+      <form id="ticketForm">
+        <div class="form-group">
+          <label for="name">Name of Visitor</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="adhar">Adhar Number</label>
+          <input
+            type="text"
+            id="adhar"
+            name="adhar"
+            placeholder="Enter your Adhar number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="adhar">Enter your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="adults">Number of Adults</label>
+          <input
+            type="number"
+            id="adults"
+            name="adults"
+            placeholder="Enter number of adults"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="kids">Number of Kids</label>
+          <input
+            type="number"
+            id="kids"
+            name="kids"
+            placeholder="Enter number of kids"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <button type="submit" class="submit-btn">Generate Ticket</button>
+      </form>
+    </div>
+  </body>
+</html>

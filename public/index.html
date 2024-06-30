@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum Ticket Form</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url("/public/museum-bg.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      button {
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="/" method="POST" id="myForm">
+        <input type="text" name="name" placeholder="Name of Visitor" required />
+        <input type="number" name="age" placeholder="Age" required />
+        <input
+          type="text"
+          name="aadhaar"
+          placeholder="Aadhaar Number"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="numAdults"
+          placeholder="Number of Adults"
+          required
+        />
+        <input
+          type="number"
+          name="numKids"
+          placeholder="Number of Kids"
+          required
+        />
+        <input type="date" name="date" placeholder="Date" required />
+        <button type="submit">Generate Ticket</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum Ticket Form</title>
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: url("./museum-bg.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .form-container {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        width: 100%;
+      }
+      input,
+      button {
+        display: block;
+        width: calc(100% - 20px);
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      input:focus {
+        outline: none;
+        border-color: #5cb85c;
+        box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+      }
+      button {
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="/" method="POST" id="myForm">
+        <input type="text" name="name" placeholder="Name of Visitor" required />
+        <input type="number" name="age" placeholder="Age" required />
+        <input
+          type="text"
+          name="aadhaar"
+          placeholder="Aadhaar Number"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="numAdults"
+          placeholder="Number of Adults"
+          required
+        />
+        <input
+          type="number"
+          name="numKids"
+          placeholder="Number of Kids"
+          required
+        />
+        <input type="date" name="date" placeholder="Date" required />
+        <button type="submit">Generate Ticket</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
